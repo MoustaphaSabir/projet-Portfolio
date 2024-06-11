@@ -1,0 +1,220 @@
+
+ *{
+    box-sizing: border-box;
+ }
+ 
+html {
+    scroll-behavior: smooth;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family:"Roboto Serif", serif;
+}
+body, header{
+    background-color: rgba(110, 199, 224, .314);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(189, 141, 9, 0.02);
+    padding: 10px 0;
+    text-align: center;
+}
+/* logo*/
+header {
+    background-color: #727272;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+   align-self: center;
+} */
+
+/* nav a:first-of-type {
+    margin-left: 0;
+} */
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    margin-right: 500px;
+}
+
+/* logo */
+header a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav :hover{
+    color: rgb(58, 15, 232);
+    transform: scale(1.1);
+    font-weight: 400px; 
+    transition: all 0.3s ease;
+}
+.hero-header {
+    background-image: url('/images/bacground.png');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 248, 248);
+    text-align: center;
+    
+}
+
+.hero-header h1 {
+    font-size: 2em;
+    margin: 0 ;
+}
+.nom{
+    display: grid;
+    justify-content: end;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    /* background-color: black; */
+}
+/* section */
+/* body {
+    font-family:"Roboto Serif", serif;
+    margin: 0;
+    padding: 0;
+} */
+.contenair {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1730px;
+}
+
+.contenair section {
+    flex: 1  35%; 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(58, 15, 232);
+     /* #f4eaea; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+h1:hover{
+    text-decoration: underline;
+    color:  rgb(58, 15, 232);
+    /* transform: translateY(-2px); */
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+h2, h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenair section {
+        flex: 1 1 100%; 
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:  rgb(58, 15, 232);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+
+
+footer a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* transform: translateY(-2px); */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+/* Responsive - Mobile First */
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    footer p, footer ul {
+        margin: 0;
+    }
+}
+/* Faire un logo 
+image de presentation avec le y
+*/
+
+
