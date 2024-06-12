@@ -13,7 +13,7 @@ body, html {
     font-family:"Roboto Serif", serif;
 }
 body, header{
-    background-color: rgba(110, 199, 224, .314);
+    /* background-color: rgba(31, 167, 205, 0.314); */
 }
 
 
@@ -27,7 +27,7 @@ header {
 }
 /* logo*/
 header {
-    background-color: #727272;
+    /* background-color: #727272; */
     padding: 20px 0;
 }
 
@@ -36,14 +36,6 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
-/* nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-   align-self: center;
-} */
 
 /* nav a:first-of-type {
     margin-left: 0;
@@ -63,7 +55,7 @@ header a{
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 nav :hover{
     color: rgb(58, 15, 232);
@@ -80,8 +72,7 @@ nav :hover{
     align-items: center;
     justify-content: center;
     color: rgb(252, 248, 248);
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .hero-header h1 {
@@ -93,14 +84,9 @@ nav :hover{
     justify-content: end;
     margin-bottom: 30px;
     margin-right: 50px;
-    /* background-color: black; */
 }
 /* section */
-/* body {
-    font-family:"Roboto Serif", serif;
-    margin: 0;
-    padding: 0;
-} */
+
 .contenair {
     display: flex;
     flex-wrap: wrap;
@@ -113,20 +99,19 @@ nav :hover{
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid rgb(58, 15, 232);
+    border: 1px solid rgb(58, 15, 232);
      /* #f4eaea; */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 100%;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 h1:hover{
     text-decoration: underline;
     color:  rgb(58, 15, 232);
-    /* transform: translateY(-2px); */
     transform: scale(1.01);
     transition: all 0.3s ease;
 }
@@ -137,7 +122,7 @@ h2, h3 {
 }
 
 p, ul {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -155,14 +140,15 @@ ul {
 /* Footer */
 footer {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     padding: 20px;
     background-color:  rgb(58, 15, 232);
     border-radius: 10px;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
+    /* padding: 200px; */
     color: white;
 }
 
@@ -214,7 +200,63 @@ footer ul li {
     }
 }
 /* Faire un logo 
-image de presentation avec le y
-*/
+
+/* La page contact */
+/* La page mon CV */
+.bloc-presentation, .photo-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px; 
+}
+
+.photo-presentation img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+.presentation h1 {
+    margin-bottom: 50px;
+}
+/* Competences */
+.bloc-competences {
+    /* width: 80%; */
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 10px;
+    /* background-color: #f4f4f4; */
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* .skill {
+    margin: 10px 0;
+} */
+
+.skill  {
+    margin: 0;
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    /* background-color: #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 5px;
+    background-color: #4caf50;
+    border-radius: 3px 0 0 2px;
+}
+.underline {
+    text-decoration: underline;
+}
+
 
 
