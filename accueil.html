@@ -6,6 +6,7 @@
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
      <link rel="stylesheet" href="./Styles/reset.css">
      <link rel="stylesheet" href="./Styles/accueil.css">
+     <link rel="stylesheet" href="./Styles/contact.css">
      <script>
          src="https://unpkg.com/@futuravision/futura.js/dist/futurajs.min.js">
      </script>
@@ -27,33 +28,74 @@
             <!-- Lien vers la page d'accueil -->
         </div>
     </div>
-
     <main>
         <div class="contenair">
-            <section class="bloc-comptences">
-                <!-- Mettre section dans une logueur et une largeur -->
+            <section class="bloc-competences">
                 <h1>COMPETENCES</h1>
                 <h2>FRONT END</h2>
-                <P>HTML 5</P>
-                <P>CSS</P>
-                <P>javascript:évènements, gestion du DOM. </P>
-                <p>Responsive </p>
-                <p>Git/GitHub :</p>
-                <h2>Développement Back END :</h2>
-                <P>PHP</P>
-                <p>MySQL</p>
-                <p>Intégration de l’IA</p>
+                <div class="skill">
+                    <p>HTML 5</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript: événements, gestion du DOM</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Responsive</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Git/GitHub</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <h2>Développement Back END</h2>
+                <div class="skill">
+                    <p>PHP</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MySQL</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Intégration de l’IA</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
             </section>
             <section class="bloc-presentation">
-                <h1>PRESENTATIONS</h1>
                 <div class="photo-presentation">
-                  <img src="images/M.ico" alt="MA photo">
+                    <img src="images/M.ico" alt="MA photo">
                 </div>
-                <p>Bonjour,</p>
-                <p>Actuellement en formation préparatoire au titre professionnel Développeur web et web mobile à l’Ecole Atypique .</p>
-                <p>Passionné par le développement web et Web mobile, objectif? trouver 
-                    une alternance à compter du 02 septembre 2024 pour mettre mes compétences en action 
-                    et préparer le titreprofessionnel « Développeur web et web mobile »</p>
+                <div class="presentation">
+                    <h1>PRESENTATIONS</h1>
+                    <p>Bonjour,</p>
+                    <p>Actuellement en formation préparatoire au titre professionnel Développeur 
+                        web et web mobile à l’Ecole Atypique .</p>
+                    <p>Passionné par le développement web et Web mobile, objectif? trouver 
+                        une alternance à compter du 02 septembre 2024 pour mettre mes compétences en action 
+                        et préparer le titreprofessionnel « Développeur web et web mobile »</p>
+                </div>
             </section>
             <section class="bloc-diplome">
                 <h1>DIPLOMES</h1>
@@ -72,6 +114,7 @@
                     <li>Gestion de la caisse et l’accueil client & Maintien de l’attractivité des rayons </li>
                 </ul> -->
             </section>
+            <script src="scripts.js"></script>
         </div>
         <h1 data-fv-anim='autowrite' data-fv-data="Write Here Your Text"></h1>
         <!-- <p>Ajout du paragraphe</p> -->
@@ -92,6 +135,5 @@
             <li>Plan du site</li>
         </ul>
     </footer>
-    </main>
 </body>
 </html>
