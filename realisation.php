@@ -47,12 +47,12 @@ if (!$connexion) {
                             <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
                         </div>
                         <h2><?= $projet['titre'] ?></h2>
-                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
-                        <a href="description.php">En savoir plus</a>
-                       <!-- <input type="submit" value="En savoir plus" id_categorie =" 3"> -->
-                        <!-- <button href="description.php">En savoir plus</button> -->
-                        <input type="hidden" name="id_categorie" value="3">
-                        <input type="submit" value="En savoir plus">
+                        <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button>
+                        <!-- <a href="description.php">En savoir plus</a> -->
+                       <!-- <input type="submit" value="En savoir plus" id_categorie =" 3">  -->
+                        <!-- <button href="description.php">En savoir plus</button>  -->
+                        <!-- <input type="hidden" name="id_categorie" value="3">
+                        <input type="submit" value="En savoir plus"> -->
 
                     <?php endforeach ?>
                 <?php endif ?>
@@ -68,9 +68,9 @@ if (!$connexion) {
                             <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
                         </div>
                         <h2><?= $projet['titre'] ?></h2>
-                        <button href="description.php">En savoir plus</button>
+                        <!-- <button href="description.php">En savoir plus</button> -->
                         <!-- <a href="description.php">En savoir plus</a> -->
-                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
+                        <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button>
                     <?php endforeach ?>
                 <?php endif ?>
           
@@ -79,7 +79,7 @@ if (!$connexion) {
         </div>
     </main>
     <footer>
-        <a href="contact.html">CONTACTEZ-MOI</a>
+        <a href="confirmation.php">CONTACTEZ-MOI</a>
         <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
         <ul>
             <li>Mentions légales</li>

@@ -97,7 +97,7 @@ mysqli_close($connexion);
             
          </main>
          <footer>
-             <a href="contact.html">CONTACTEZ-MOI</a>
+             <a href="confirmation.php">CONTACTEZ-MOI</a>
              <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
              <ul>
                  <li>Mentions légales</li>

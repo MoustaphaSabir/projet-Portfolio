@@ -59,14 +59,14 @@
                 <div class="skill">
                     <p>Git/GitHub</p>
                     <div class="bar">
-                        <div class="progress" style="width: 40%;"></div>
+                        <div class="progress" style="width: 30%;"></div>
                     </div>
                 </div>
                 <h2>Développement Back END</h2>
                 <div class="skill">
                     <p>PHP</p>
                     <div class="bar">
-                        <div class="progress" style="width: 65%;"></div>
+                        <div class="progress" style="width: 45%;"></div>
                     </div>
                 </div>
                 <div class="skill">
