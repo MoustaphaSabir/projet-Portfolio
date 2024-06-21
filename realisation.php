@@ -1,9 +1,24 @@
+<?php
+$serveur = "localhost";
+$utilisateur = "root";
+$mot_de_passe = "";
+$base_de_donnees = "portefolio";
+
+// Établir la connexion
+$connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);
+
+if (!$connexion) {
+    die("Connexion échouée : " . mysqli_connect_error());
+}
+?> 
  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/interface.css">
     <link rel="stylesheet" href="Styles/accueil.css">
@@ -18,42 +33,58 @@
             <a href="mon-cv.html">MON CV</a>
             <a href="confirmation.php">CONTACT</a>
         </nav>
-    </header>
+</header>                                                                           ²
     <main>
-        <div class="portfolio">
-            <div class="project">
-                <img src="images/capture.png" alt="Project Image">
-                <h2>Ephone-Store</h2>
-                <p>Description de projet 1. C'est un projet qui fait ceci </p>
-                <a href="projet1.html">En savoir plus</a>
+        <div class="contenair">
+            <div class="projet projet-1">
+                <?php
+                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 1";
+                    $projets = mysqli_query($connexion, $sql);
+                ?>
+                <?php if($projets) : ?>
+                    <?php foreach($projets as $projet) : ?>
+                        <div class="image-container">
+                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                        </div>
+                        <h2><?= $projet['titre'] ?></h2>
+                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
+                        <a href="description.php">En savoir plus</a>
+                       <!-- <input type="submit" value="En savoir plus" id_categorie =" 3"> -->
+                        <!-- <button href="description.php">En savoir plus</button> -->
+                        <input type="hidden" name="id_categorie" value="3">
+                        <input type="submit" value="En savoir plus">
+
+                    <?php endforeach ?>
+                <?php endif ?>
             </div>
-            <div class="project">
-                <img src="images/Ai.webp" alt="Project Image">
-                <h2>Boulangerie-Patisserie</h2>
-                <p>Description de projet 2. Ce projet est destiné</p>
-                <a href="projet2.html">En savoir plus</a>
-            </div>
-            <div class="project">
-                <img src="images/pexels-bacground.jpg" alt="Project Image">
-                <h2>Centre de formation Bureautique</h2>
-                <p>Description de projet 3. Il s'agit d'un projet innovant qui</p>
-                <a href="projet3.html">En savoir plus</a>
-            </div>
-            <div class="project">
-                <img src="images/bacground.png" alt="Project Image">
-                <h2>Mon Portfolio</h2>
-                <p>Description de projet 3. Il s'agit d'un projet innovant qui...</p>
-                <a href="projet3.html">En savoir plus</a>
+            <div class="projet projet-2">
+                <?php
+                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 2";
+                    $projets = mysqli_query($connexion, $sql);
+                ?>
+                <?php if($projets) : ?>
+                    <?php foreach($projets as $projet) : ?>
+                        <div class="image-container">
+                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                        </div>
+                        <h2><?= $projet['titre'] ?></h2>
+                        <button href="description.php">En savoir plus</button>
+                        <!-- <a href="description.php">En savoir plus</a> -->
+                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
+                    <?php endforeach ?>
+                <?php endif ?>
+          
+                
             </div>
         </div>
     </main>
     <footer>
-             <a href="contact.html">CONTACTEZ-MOI</a>
-             <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
-             <ul>
-                 <li>Mentions légales</li>
-                 <li>Plan du site</li>
-             </ul>
+        <a href="contact.html">CONTACTEZ-MOI</a>
+        <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
+        <ul>
+            <li>Mentions légales</li>
+            <li>Plan du site</li>
+        </ul>
     </footer>
 </body>
 </html>

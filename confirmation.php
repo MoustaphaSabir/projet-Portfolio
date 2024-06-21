@@ -48,6 +48,7 @@ mysqli_close($connexion);
      <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
          <link rel="stylesheet" href="Styles/reset.css">
          <link rel="stylesheet" href="Styles/accueil.css">
          <link rel="stylesheet" href="Styles/contact.css">
@@ -91,7 +92,9 @@ mysqli_close($connexion);
                      <a href="http://www.linkedin.com/in/moustapha-sabir-moussa-5b00a0228" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                      <a href="http://https://www.google.com/maps/place/86000+Poitiers/@46.584682,0.3301719,13z/data=!3m1!4b1!4m6!3m5!1s0x47fdbe72439eb3ab:0x97de2319c5e09093!8m2!3d46.5798429!4d0.3416875!16zL20vMGRsMmc?entry=ttu" target="_blank" rel="noopener noreferrer">86000 Poitiers</a>
                  </div>
+                 <a href="./admin/contact-list.php">Admin</a>
              </div>
+            
          </main>
          <footer>
              <a href="contact.html">CONTACTEZ-MOI</a>
