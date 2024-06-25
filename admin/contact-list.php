@@ -20,8 +20,8 @@
 
 <h1>Administration</h1>
 
-<a href="contact-list.php">Contacts</a> | <a href="projet-list.php">Projets</a>
-
+<a href="contact-list.php">Contacts</a> | <a href="realisation-admin.php">Projets-portfolio</a>|
+<a href="ajout-realisation.php">Ajout BDD</a>
 <h2>Contact</h2>
 <?php
 

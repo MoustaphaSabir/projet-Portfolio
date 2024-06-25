@@ -18,12 +18,12 @@
             <a href="accueil.php">ACCUEIL</a>
             <a href="realisation.php">MES PROJETS</a>
             <a href="mon-cv.html">MON CV</a>
-            <a href="confirmation.php">CONTACT</a>
+            <a href="formulaire.php">CONTACT</a>
         </nav>
     </header>
     <div class="hero-header">
         <div>
-            <h1 class="nom">Moustapha SABIR| Futur Developpeur Web</h1>
+            <h1 class="nom">Moustapha SABIR|Développeur Web</h1>
             <!-- Lien vers la page d'accueil -->
         </div>
     </div>
@@ -127,7 +127,7 @@
         </script>
     <footer>
         <!-- <img src="/images/logo-nav-masta.png" alt="logo" class="logo"> -->
-        <a href="confirmation.php">CONTACT-MOI</a>
+        <a href="formulaire.php">CONTACT-MOI</a>
         <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
         <ul>
             <li>Mentions légale</li>

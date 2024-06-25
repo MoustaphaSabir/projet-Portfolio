@@ -29,24 +29,25 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap; 
 }
 
 .logo {
-    width: 50px; /* Adjust logo size for mobile */
-    height: 50px;
-    border-radius: 50%;
+    width: 100%; 
+    height: 100%;
+    border-radius: 70%;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 400px;
 }
 
-header a {
+header a{
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    font-size: 1em; /* Adjust font size for mobile */
+    font-size: 1.5em;
 }
-
+/* responsive  */
+ /* Styles pour les petits écrans */
 nav :hover {
     color: rgb(58, 15, 232);
     transform: scale(1.1);
@@ -57,17 +58,17 @@ nav :hover {
     background-image: url('../images/bacground.png');
     background-size: cover;
     background-position: top;
-    height: 70vh; /* Adjust height for mobile */
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(252, 248, 248);
     text-align: center;
-    padding: 0 20px; /* Add padding for better text readability on mobile */
+    padding: 0 20px; 
 }
 
 .hero-header h1 {
-    font-size: 1.5em; /* Adjust font size for mobile */
+    font-size: 1.5em; 
     margin: 0;
 }
 
@@ -83,7 +84,7 @@ nav :hover {
 }
 
 .contenair section {
-    flex: 1 1 100%; /* Full width on mobile */
+    flex: 1 1 100%; 
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
@@ -104,12 +105,12 @@ h1:hover {
 }
 
 h2, h3 {
-    font-size: 1.2em; /* Adjust font size for mobile */
+    font-size: 1.2em; 
     margin-bottom: 8px;
 }
 
 p, ul {
-    font-size: 1em; /* Adjust font size for mobile */
+    font-size: 1em; 
     line-height: 1.5;
 }
 
@@ -122,12 +123,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column; 
     margin: 20px 0;
 }
 
 .photo-presentation img {
-    max-width: 150px; /* Adjust image size for mobile */
+    max-width: 150px; 
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -174,7 +175,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 200px;
     background-color: rgb(58, 15, 232);
     border-radius: 10px;
     text-align: center;
@@ -214,20 +215,20 @@ footer ul {
 /* Responsive Styles */
 @media (min-width: 600px) {
     .logo {
-        width: 70px; /* Adjust logo size for tablet */
+        width: 70px; 
         height: 70px;
     }
 
     header a {
-        font-size: 1.2em; /* Adjust font size for tablet */
+        font-size: 1.2em; 
     }
 
     .hero-header {
-        height: 80vh; /* Adjust height for tablet */
+        height: 50vh; 
     }
 
     .hero-header h1 {
-        font-size: 2em; /* Adjust font size for tablet */
+        font-size: 2em; 
     }
 
     .contenair {
@@ -235,16 +236,16 @@ footer ul {
     }
 
     .contenair section {
-        flex: 1 1 50%; /* Two columns on tablet */
+        flex: 1 1 50%;
         margin: 20px;
     }
 
     .bloc-presentation, .photo-presentation {
-        flex-direction: row; /* Side by side on tablet */
+        flex-direction: row;
     }
 
     .photo-presentation img {
-        max-width: 200px; /* Adjust image size for tablet */
+        max-width: 200px;
         margin-right: 20px;
     }
 
@@ -258,23 +259,23 @@ footer ul {
         margin: 0;
     }
 }
-
+/* Desktop */
 @media (min-width: 1024px) {
     .logo {
-        width: 100px; /* Adjust logo size for desktop */
+        width: 100px;
         height: 100px;
     }
 
     header a {
-        font-size: 1.5em; /* Adjust font size for desktop */
+        font-size: 1.5em; 
     }
 
     .hero-header {
-        height: 100vh; /* Full height on desktop */
+        height: 100vh;
     }
 
     .hero-header h1 {
-        font-size: 2.5em; /* Adjust font size for desktop */
+        font-size: 2.5em; 
     }
 
     .contenair {
@@ -283,7 +284,7 @@ footer ul {
     }
 
     .contenair section {
-        flex: 1 1 30%; /* Three columns on desktop */
+        flex: 1 1 30%;
     }
 
     .bloc-presentation, .photo-presentation {
@@ -291,7 +292,7 @@ footer ul {
     }
 
     .photo-presentation img {
-        max-width: 250px; /* Adjust image size for desktop */
+        max-width: 250px; 
     }
 }
 

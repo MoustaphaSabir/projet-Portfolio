@@ -30,57 +30,33 @@ if (!$connexion) {
             <a href="accueil.php">ACCUEIL</a>
             <a href="realisation.php">MES PROJETS</a>
             <a href="mon-cv.html">MON CV</a>
-            <a href="confirmation.php">CONTACT</a>
+            <a href="formulaire.php">CONTACT</a>
         </nav>
 </header>                                                                           ²
     <main>
         <div class="contenair">
-            <div class="projet projet-1">
+            >
                 <?php
-                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 3";
+    
+                    $sql = "SELECT * FROM projet WHERE id_projet=" . $_GET['id'];
                     $projets = mysqli_query($connexion, $sql);
                 ?>
                 <?php if($projets) : ?>
                     <?php foreach($projets as $projet) : ?>
+                    <div class="projet">
                         <div class="image-container">
-                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                            <img src="<?php echo $projet['image-1'] ?>" alt="<?= $projet['titre'] ?>">
+                            <img src="<?php echo $projet['image-2'] ?>" alt="<?= $projet['titre'] ?>">
                         </div>
-                        <h2><?= $projet['titre'] ?></h2>
-                        <p><?= $projet['description'] ?></p>
-                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
-                        <!-- <a href="description.php">En savoir plus</a> -->
-                       <!-- <input type="submit" value="En savoir plus" id_categorie =" 3">  -->
-                        <!-- <button href="description.php">En savoir plus</button>  -->
-                        <!-- <input type="hidden" name="id_categorie" value="3">
-                        <input type="submit" value="En savoir plus"> -->
-
+                    </div>
+                    <h2><?= $projet['titrex'] ?></h2>
+                    <p><?= $projet['description'] ?></p>
                     <?php endforeach ?>
                 <?php endif ?>
-            </div>
-            <div class="projet projet-2">
-                <?php
-                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 4";
-                    $projets = mysqli_query($connexion, $sql);
-                ?>
-                <?php if($projets) : ?>
-                    <?php foreach($projets as $projet) : ?>
-                        <div class="image-container">
-                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
-                        </div>
-                        <h2><?= $projet['titre'] ?></h2>
-                        <p><?= $projet['description'] ?></p>
-                        <!-- <button href="description.php">En savoir plus</button> -->
-                        <!-- <a href="description.php">En savoir plus</a> -->
-                        <!-- <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button> -->
-                    <?php endforeach ?>
-                <?php endif ?>
-          
-                
-            </div>
         </div>
     </main>
     <footer>
-        <a href="confirmation.php">CONTACTEZ-MOI</a>
+        <a href="formulaire.php">CONTACTEZ-MOI</a>
         <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
         <ul>
             <li>Mentions légales</li>

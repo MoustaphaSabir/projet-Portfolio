@@ -11,7 +11,7 @@ if (!$connexion) {
     die("Connexion échouée : " . mysqli_connect_error());
 }
 ?> 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,6 @@ if (!$connexion) {
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/interface.css">
     <link rel="stylesheet" href="Styles/accueil.css">
-
 </head>
 <body>
     <header>
@@ -31,55 +30,30 @@ if (!$connexion) {
             <a href="accueil.php">ACCUEIL</a>
             <a href="realisation.php">MES PROJETS</a>
             <a href="mon-cv.html">MON CV</a>
-            <a href="confirmation.php">CONTACT</a>
+            <a href="formulaire.php">CONTACT</a>
         </nav>
-</header>                                                                           ²
+    </header>
     <main>
-        <div class="contenair">
-            <div class="projet projet-1">
-                <?php
-                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 1";
+        <div class="container"> <!-- Correction ici -->
+            <?php
+                    $sql = "SELECT * FROM projet ";
                     $projets = mysqli_query($connexion, $sql);
-                ?>
+                    ?>
                 <?php if($projets) : ?>
                     <?php foreach($projets as $projet) : ?>
-                        <div class="image-container">
-                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                        <div class="projet">
+                            <div class="image-container">
+                                <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                            </div>
+                            <h2><?= $projet['titre'] ?></h2>
+                            <a class="button" href="description.php?id=<?= $projet['id_projet'] ?>">En savoir plus</a>
                         </div>
-                        <h2><?= $projet['titre'] ?></h2>
-                        <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button>
-                        <!-- <a href="description.php">En savoir plus</a> -->
-                       <!-- <input type="submit" value="En savoir plus" id_categorie =" 3">  -->
-                        <!-- <button href="description.php">En savoir plus</button>  -->
-                        <!-- <input type="hidden" name="id_categorie" value="3">
-                        <input type="submit" value="En savoir plus"> -->
-
                     <?php endforeach ?>
                 <?php endif ?>
-            </div>
-            <div class="projet projet-2">
-                <?php
-                    $sql = "SELECT * FROM projet INNER JOIN categorie_projet ON categorie_projet.id_categorie = projet.id_categorie WHERE categorie_projet.id_categorie = 2";
-                    $projets = mysqli_query($connexion, $sql);
-                ?>
-                <?php if($projets) : ?>
-                    <?php foreach($projets as $projet) : ?>
-                        <div class="image-container">
-                            <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
-                        </div>
-                        <h2><?= $projet['titre'] ?></h2>
-                        <!-- <button href="description.php">En savoir plus</button> -->
-                        <!-- <a href="description.php">En savoir plus</a> -->
-                        <button class="link-button" onclick="window.location.href='description.php'">En savoir plus<button>
-                    <?php endforeach ?>
-                <?php endif ?>
-          
-                
-            </div>
         </div>
     </main>
     <footer>
-        <a href="confirmation.php">CONTACTEZ-MOI</a>
+        <a href="formulaire.php">CONTACTEZ-MOI</a>
         <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
         <ul>
             <li>Mentions légales</li>
@@ -88,4 +62,3 @@ if (!$connexion) {
     </footer>
 </body>
 </html>
- 
