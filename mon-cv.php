@@ -156,10 +156,10 @@
                   <img src="images/images-cv/ma-photo.png" width="100%" height="100%"  alt="mon-Image">
                 </div>
                 <div class="right">
-                    <p><img src="images/images-cv/email png.png" class="info"> moustaphasabir61&@gmail.com</p>
-                    <p><img src="images/images-cv/tel.png" class="info"> 0605954312</p>
-                    <p><img src="images/images-cv/mapst.png " class="info"> 86000 Poitiers</p>
-                    <p><img src="images/images-cv/permis.png" class="info"> Permis</p>
+                    <p><img src="images/images-cv/email png.png"class="info-1">moustaphasabir61&@gmail.com</p>
+                    <p><img src="images/images-cv/tel.png" class="info-1"> 0605954312</p>
+                    <p><img src="images/images-cv/mapst.png " class="info-1"> 86000 Poitiers</p>
+                    <p><img src="images/images-cv/permis.png" class="info-1"> Permis</p>
                 </div>
             </section>
         </div>
@@ -236,42 +236,44 @@
                 <h2>Baccalauréat General Scientifique/Lycée Coscome</h2>
                 <p>SEPTEMBRE 2020</p>
             </section>
-            <section id="langues">
-                <h1>LANGUES</h1>
-                <p>Francais</p>
-                <div class="bar">
-                        <div class="progress" style="width: 95%;"></div>
-                    </div>
-                <p>Anglais</p>
-                <div class="bar">
-                        <div class="progress" style="width: 45%;"></div>
-                    </div>
-                <p>Arabe</p>
-                <div class="bar">
-                        <div class="progress" style="width: 85%;"></div>
-                    </div>
-            </section>
-            <section id="interet">
-                <h1>CENTRE D'INTERET</h1>
-                <p>Voyage</p>
-                <p>Sport</p>
-                <p>Naviguer sur le site Web</p>
-                <p>Lecture</p>
+         <section id="interet">
+         <h1>CENTRE D'INTERET</h1>
+            <!-- <hr class="light"> -->
+            <div class="reseaux">
+                <p><img src="images/images-centre-interet/reseaux.png" class="info">Réseaux Sociaux</p>
+                <p><img src="images/images-centre-interet/voyage.png" class="info">Voyage</p>
+                <p><img src="images/images-centre-interet/sport.png" class="info">Sport</p>
+                <p><img src="images/images-centre-interet/livre.png" class="info">Lecture</p>
+                
+            </div>
          </section>
          <section>
          <h1>Réseaux sociaux</h1>
-            <hr class="light">
+            <hr class="right">
             <div class="reseaux">
-                <p><img src="images/images-cv/git hun .png" class="info"><span>https://github.com/dashboard</span></p>
-                <p><img src="images/images-cv/linkdein.png" class="info"><span>www.linkedin.com/in/moustapha-sabir-moussa-5b00a0228</span></p>
-                <p><img src="images/images-cv/tiktok.png" class="info"><span>https://fr.linkedin.com/</span></p>
-                <p><img src="images/images-cv/facebook.png" class="info"><span>https://fr.linkedin.com/</span></p>
-                <p><img src="images/images-cv/twetter.png" class="info"><span>https://fr.linkedin.com/</span></p>
+                <a href="https://www.linkedin.com/in/moustapha-sabir-moussa-5b00a0228" target="_blank" ><img src="images/images-cv/linkdein.png" class="reseaux-sociaux"></a>
+                <a href="https://github.com/MoustaphaSabir/mini-projet-boulangerie-patisserie-main.git" target="_blank" ><img src="images/images-cv/git hun .png"class="reseaux-sociaux"></a>
+            </div>
+     
+         <div>
+            <h1>LANGUES</h1>
+            <p>Francais</p>
+            <div class="bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            <p>Anglais</p>
+            <div class="bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+            <p>Arabe</p>
+            <div class="bar">
+                    <div class="progress" style="width: 85%;"></div>
             </div>
          </section>
       </div>
     </div>
     <footer>
+   
         <a href="formulaire.php">CONTACTEZ-MOI</a>
         <p>© Copyright 2023 | Moustapha SABIR | Tous droits réservés</p>
         <ul>
