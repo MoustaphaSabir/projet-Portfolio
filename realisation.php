@@ -29,7 +29,7 @@ if (!$connexion) {
             <img src="./images/logo-nav-masta.png" alt="logo" class="logo">
             <a href="accueil.php">ACCUEIL</a>
             <a href="realisation.php">MES PROJETS</a>
-            <a href="mon-cv.html">MON CV</a>
+            <a href="mon-cv.php">MON CV</a>
             <a href="formulaire.php">CONTACT</a>
         </nav>
     </header>
@@ -44,6 +44,7 @@ if (!$connexion) {
                         <div class="projet">
                             <div class="image-container">
                                 <img src="<?php echo $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
+                                <p><?= $projet['description'] ?></p>
                             </div>
                             <h2><?= $projet['titre'] ?></h2>
                             <a class="button" href="description.php?id=<?= $projet['id_projet'] ?>">En savoir plus</a>

@@ -22,27 +22,31 @@ main {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     gap: 15px;
-    margin-bottom: 200px;
+    flex-wrap: wrap;
+    /* margin-bottom: 200px; */
+
 }
 
 .projet {
     border-radius: 5px;
     margin: 20px;
     margin-bottom: 100px;
+
 }
 
 .image-container {
     width: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 .image-container img {
     width: 100%;
-    width: 700px;
+
     padding-bottom: 20px;
     object-fit: cover;
     transition: filter 0.3s ease;

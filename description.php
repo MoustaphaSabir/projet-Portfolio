@@ -29,7 +29,7 @@ if (!$connexion) {
             <img src="./images/logo-nav-masta.png" alt="logo" class="logo">
             <a href="accueil.php">ACCUEIL</a>
             <a href="realisation.php">MES PROJETS</a>
-            <a href="mon-cv.html">MON CV</a>
+            <a href="mon-cv.php">MON CV</a>
             <a href="formulaire.php">CONTACT</a>
         </nav>
 </header>                                                                           ²
@@ -47,10 +47,10 @@ if (!$connexion) {
                         <div class="image-container">
                             <img src="<?php echo $projet['image-1'] ?>" alt="<?= $projet['titre'] ?>">
                             <img src="<?php echo $projet['image-2'] ?>" alt="<?= $projet['titre'] ?>">
+                            <img src="<?php echo $projet['image-3'] ?>" alt="<?= $projet['titre'] ?>">
                         </div>
+                        <a class="button" href="realisation.php?id=<?= $projet['id_projet'] ?>">Retour Projet</a>
                     </div>
-                    <h2><?= $projet['titrex'] ?></h2>
-                    <p><?= $projet['description'] ?></p>
                     <?php endforeach ?>
                 <?php endif ?>
         </div>
