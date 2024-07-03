@@ -259,7 +259,7 @@
             <h1>LANGUES</h1>
             <p>Francais</p>
             <div class="bar">
-                    <div class="progress" style="width: 95%;"></div>
+                    <div class="progress" style="width: 85%;"></div>
                 </div>
             <p>Anglais</p>
             <div class="bar">
